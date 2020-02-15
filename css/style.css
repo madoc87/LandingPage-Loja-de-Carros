@@ -1,0 +1,679 @@
+*{
+	margin: 0px;
+	padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+}
+
+html, body{
+	height: 100%;
+  /*background-color: black;*/
+}
+
+/*Clear usado para limpar definicoes do float*/
+.clear{
+  clear: both;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*==================================== Header ====================================*/
+
+header{
+  padding: 40px 2%;
+}
+
+.logo img{
+  float: left;
+  /*margin: 20px 0;*/
+}
+
+header nav.menu{
+  float: right;
+}
+
+header nav.menu ul{
+  padding: 8px 0;
+  list-style-type: none;
+}
+
+header nav.menu ul li{
+  float: left;
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 23px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+header nav.menu ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+
+header nav.menu-mobile{
+  display: none;
+  float: right;
+  width: 28px;
+  height: 28px;
+  margin-top: 30px;
+  background-image: url('../images/icon_menu.png');
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+header nav.menu-mobile ul{
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 80px;
+  border-bottom: 4px solid #EB2D2D;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 999;
+  display: none;
+}
+
+header nav.menu-mobile ul li{
+  /*float: left;*/
+  padding: 20px 0;
+  font-size: 23px;
+  font-style: italic;
+}
+
+header nav.menu-mobile ul li a{
+ text-decoration: none;
+ color: black;
+}
+
+/*==================================== Section 1 chamada ====================================*/
+
+.chamada{ /*banner*/
+  /*overflow: hidden; Para nao criar scroll bar*/
+  background-image: url('../images/bg2.jpg');
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-height: 800px;
+  min-height: 600px;
+  padding: 0 2%;
+  font-weight: 300;
+  border-bottom: 5px solid red;
+}
+
+.texto-chamada{ /*text-banner*/
+  padding-top: 100px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-45%);
+  -ms-transform: translateX(-40%);
+}
+
+.fundo-texto h2{ /*text-banner-single*/
+  color: white;
+  padding: 10px 30px;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.fundo-texto h3{ /*text-banner-single - contato@contato.com.br */
+  font-size: 25px;
+  color: black;
+  padding: 10px 30px;
+}
+
+.fundo-texto{ /*text-banner-single CONSULTORIA*/
+  width: 250px;
+  margin: 25px;
+  background-size: 100% 100%;
+  background-position: center;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: 0px;
+  position: relative;
+}
+
+.fundo-texto:nth-of-type(2){ /*text-banner-single - Compra */ 
+  width: 200px;
+  left: -10px;
+  font-size: 25px;
+}
+
+.fundo-texto:nth-of-type(3){ /*text-banner-single - Venda */  
+  width: 160px;
+  left: -20px;
+  font-size: 25px;
+}
+
+.fundo-texto:nth-of-type(4){ /*text-banner-single - contato@contato.com.br */
+  width: 350px;
+  left: -30px;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+
+/*==================================== Section 2 Destaque Veiculos ====================================*/
+
+.destaque{
+  padding-top: 40px;
+  /*background-color: orange;*/
+  margin: 0 2%;
+}
+
+.destaque h2{
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  /*Linha atras do titulo*/
+  background-color: white;
+  position: relative;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.linha-titulo{
+  /*background-color: red;*/
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+.linha1{
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 20px;
+  background-color: black;
+}
+
+
+.destaque-carro{
+  width: 33.3%;
+  float: left;
+  padding: 40px 10px;
+}
+
+.destaque-carro-img{
+  width: 100%;
+  padding-top: 60%;
+  /*height: 20vw;*/
+  /*max-width: 400px;*/
+  /*max-height: 300px;*/
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.destaque-carro h2{
+  font-size: 23px;
+  text-align: left;
+  padding: 20px 0;
+  font-style: italic;
+  text-transform: initial;
+}
+
+.destaque-carro p{
+  font-size: 17px;
+  font-style: italic;
+}
+
+.botao-detalhes{
+  text-align: center;
+  display: block;
+  line-height: 40px;
+  background-color: #EB2D2D;
+  text-decoration: none;
+  border-top:2px solid #FF8181;
+  border-bottom: 2px solid #B21E1E;
+  color: white;
+  font-size: 18px;
+  width: 150px;
+  /*margin: 10px auto;*/
+  
+}
+
+.link{
+  /*margin: 10px auto;*/
+  margin-left: 8px;
+  margin-top: 10px;
+  /*padding: 10px 22px;*/
+  text-align: center;
+  display: inline-block;
+  
+}
+
+/*==================================== Section 3 Serviços e Depoimentos ====================================*/
+
+.servicos-depoimentos-section{
+  color: white;
+  display: flex;
+}
+
+.servicos{ /*half1*/ 
+
+  /*float: left;*/
+  width: 50%;
+  text-align: right;
+  padding: 90px 5%;
+  background-color: #242424;
+  
+/*  height: 400px;
+  float: left;
+  padding: 0px 10px;*/
+}
+
+.servicos-texto{ /*half-wraper*/
+  padding-right: 30%;
+  text-align: left;
+  display: inline-block;
+
+/*  float: right;
+  width: 75%;
+  position: relative;
+  top: -30px;*/
+}
+
+.servicos-texto h2{ /*half-wraper*/
+  font-weight: normal;
+  font-style: italic;
+  font-size: 32px;
+  /*padding-bottom: 10px;*/
+}
+
+.servicos-texto ul{ /*half-wraper*/
+  display: inline-block;
+  margin-top: 20px;
+
+  /*padding: 8px 0;
+  list-style-position: inside;*/
+}
+
+.servicos-texto li{
+  margin-left: 15px;
+
+  /*padding: 5px;
+  font-size: 17px;*/
+}
+
+.servicos-texto a{
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+/*.servicos .servicos-botao{
+  float: right;
+  width: 25%;
+  text-align: center;
+  position: relative;
+  top: 220px;
+}*/
+
+.depoimentos{ /*half2*/
+
+  /*float: left;*/
+  width: 50%;
+  padding: 90px 100px;
+  background-color: #EB2D2D;
+  
+  /*height: 400px;*/
+  /*padding: 60px 10px;*/
+  /*font-style: italic;*/
+}
+
+.depoimentos h2{ /*half2*/
+  font-weight: normal;
+  font-style: italic;
+  font-size: 32px;
+
+/*  font-size: 25px;
+  font-style: normal;*/
+}
+
+.depoimentos > .container{ /*depoimento single*/
+  margin-top: 19px;
+  /*max-width: 500px;*/
+}
+
+.depoimentos  > .container p{ /*depoimento single*/
+  font-size: 22px;
+
+/*  padding: 20px 0;
+  font-size: 18px;*/
+}
+
+.navigation{
+  float: left;
+  width: 100%;
+  max-width: 700px;
+  margin-top: 30px;
+}
+
+.arrow{
+  float: left;
+}
+
+.navigation img{
+  cursor: pointer;
+  margin:  0 20px;
+}
+
+/*.arrow img:nth-of-type(2){
+   margin-left: 40px;
+}*/
+
+
+
+.navigation span{ /*nome depoimento*/
+  float: right;
+  color: #252525;
+  font-size: 23px;
+
+  /*float: right;
+  color: black;
+  font-size: 20px;*/
+  
+
+}
+
+
+/*==================================== Section 4 Contato ====================================*/
+
+.contato{
+  padding: 80px 2%;
+  border-bottom: 5px solid red;
+}
+
+.contato h2{
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  /*Linha atras do titulo*/
+  background-color: white;
+  position: relative;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+form{
+  /*width: 100%;*/
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.form-wraper{
+  float: left;
+  padding: 3px;
+  /*margin-top: 0px;*/
+}
+
+.w100{
+  width: 100%;
+}
+
+.w50{
+  width: 50%;
+}
+
+form input[type=text]{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  /*padding: 20px;*/
+  padding-left: 15px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+}
+
+form textarea{
+  width: 100%;
+  height: 196px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 18px;
+  resize: none;
+}
+
+.contato form .form-wraper:nth-of-type(5){
+  text-align: center;
+}
+
+.contato input[type=submit]{
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/*==================================== Footer ====================================*/
+
+footer{
+  padding: 40px 2%;
+  background-color: #252525;
+  /*width: 100%;*/
+}
+
+footer > .container{
+  /*width: 100%;*/
+  /*max-width: 1200px;*/
+}
+
+footer h2{
+/*  padding-top: 35px;
+  padding-right: 30px;*/
+  font-size: 19px;
+  font-style: italic; 
+  font-weight: 300;
+  float: right;
+  color: white;
+}
+
+/*.menu-footer{
+  float: left;
+}*/
+
+footer nav{
+  float: left;
+}
+
+footer nav ul{
+  /*padding: 10px 0;*/
+  list-style-type: none;
+}
+
+footer nav ul li{
+  float: left;
+  /*padding: 20px 20px;*/
+  padding: 0px 25px;
+  font-size: 19px;
+  text-transform: uppercase;
+}
+
+footer nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-style: italic;
+
+}
+
+/*==================================== Media Query 1100 ====================================*/
+
+@media screen and (max-width: 110px;){
+  .servicos{ /*half1*/
+    text-align: center;
+  }
+
+  .servicos-texto{  /*half1-wraper*/
+    text-align: left;
+    padding-right: 0;
+  }
+
+  .servicos-texto a{
+    display: block;
+    margin-left: 0;
+    margin-top: 15px;
+    /*text-align: center;*/
+  }
+}
+
+/*==================================== Media Query 930 ====================================*/
+
+@media screen and (max-width: 930px){
+
+  header{
+    padding: 20px 2%;
+  }
+
+  .logo img{
+    width: 150px;
+  }
+
+  header nav.menu ul li{
+    padding: 15px;
+    font-size: 19px;
+  }
+
+  footer{
+    text-align: center;
+  }
+
+  footer nav{
+    display: none;
+  }
+
+  footer h2{
+    /*text-align: center;*/
+    /*padding: 30px;*/
+    /*font-size: 18px;*/
+    float: none;
+  }
+}
+
+
+
+/*==================================== Media Query 768 ====================================*/
+
+@media screen and (max-width: 768px){
+
+  header nav.menu{
+    display: none;
+  }
+
+  header nav.menu-mobile{
+    display: unset;
+  }
+
+  .chamada{
+    height: 70vh;
+    max-height: 800px;
+    min-height: 0px;
+  }
+
+  .texto-chamada{ /*text-banner*/
+    padding-top: 30px;
+  }
+
+  .fundo-texto h2{ /*text-banner-single*/
+    padding: 5px 20px;
+    font-size: 28px;
+  }
+
+  .fundo-texto h3{ /*text-banner-single - contato@contato.com.br */
+    font-size: 21px;
+    padding: 7px 20px;
+  }
+
+  .fundo-texto{ /*text-banner-single CONSULTORIA*/
+    width: 220px;
+  }
+
+  .fundo-texto:nth-of-type(2){ /*text-banner-single - Compra */ 
+    width: 180px;
+  }
+
+  .fundo-texto:nth-of-type(3){ /*text-banner-single - Venda */  
+    width: 140px;
+  }
+
+  .fundo-texto:nth-of-type(4){ /*text-banner-single - contato@contato.com.br */
+    width: 290px;
+  }
+
+  .destaque .container{
+    text-align: center;
+  }
+
+  .destaque-carro{
+    width: 70%;
+    display: inline-block;
+    float: none;
+  }
+
+
+
+  /*==================================*/
+  .servicos-depoimentos-section{
+    flex-direction: column;
+  }
+
+.servicos-texto{
+    margin-left: 20%;
+  }  
+
+  .servicos, .depoimentos{ /*half1 e half2*/
+    padding: 80px 4%;
+    width: 100%;
+  }
+/*==================================*/
+
+.w50{
+  width: 100%;
+}
+
+}
+
+/*==================================== Media Query 580 ====================================*/
+
+@media screen and (max-width: 580px){
+
+  .destaque h2{
+    font-size: 20px;
+  }
+
+  .linha1{
+    top: 15px;
+  }
+
+  .texto-chamada{ /*text-banner*/
+    padding-top: 15px;
+  }
+
+  .fundo-texto h2{ /*text-banner-single*/
+    padding: 5px 15px;
+    font-size: 18px;
+  }
+
+  .fundo-texto h3{ /*text-banner-single - contato@contato.com.br */
+    font-size: 17px;
+    padding: 7px 15px;
+  }
+
+  .destaque-carro{
+    width: 100%;
+  }
+}
+
+
+
+
+
+
