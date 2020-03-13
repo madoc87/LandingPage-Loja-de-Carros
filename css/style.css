@@ -393,7 +393,7 @@ header nav.menu-mobile ul li a{
 /*==================================== P1 Section 4 Contato ====================================*/
 
 .contato{
-  padding: 30px 2%;
+  padding: 90px 2% 30px 2%;
 }
 
 .contato h2{
@@ -783,7 +783,7 @@ section.venda-single .container{
 
 section.sobre{
   min-height: 90%;
-  padding: 60px 2% 20px 2%;
+  padding: 90px 2% 20px 2%;
 }
 
 section.sobre .container{
