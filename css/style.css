@@ -24,7 +24,7 @@ html, body{
 /*==================================== Header ====================================*/
 
 header{
-  padding: 40px 2%;
+  padding: 10px 2%;
 }
 
 .borda-header{
@@ -105,14 +105,15 @@ header nav.menu-mobile ul li a{
   background-repeat: no-repeat;
   background-position: center;
   max-height: 800px;
-  min-height: 600px;
+  /*min-height: 400px;*/
   padding: 0 2%;
   font-weight: 300;
   border-bottom: 5px solid red;
 }
 
 .texto-chamada{ /*text-banner*/
-  padding-top: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   position: relative;
   left: 50%;
   transform: translateX(-45%);
@@ -552,7 +553,7 @@ footer nav ul li a{
   position: absolute;
   left: 0;
   top: 0;
-  width: 30%;
+  width: 20%;
   height: 20px;
   border-radius: 20px;
   background: linear-gradient(to bottom, rgb(255, 255, 255),rgb(200,200,200));
@@ -563,7 +564,7 @@ footer nav ul li a{
   width: 13px;
   height: 26px;
   position: absolute;
-  left: calc(30% - 13px);
+  left: 5px; /*calc(30% - 13px);*/
   top: -3px;
   border-radius: 8px;
   background: red;
@@ -758,7 +759,7 @@ section.venda-single .container{
 }
 
 .nav-galeria-wraper{
-  width: 200%;
+  /*width: 200%;*/
 
 }
 
@@ -766,7 +767,7 @@ section.venda-single .container{
   float: left;
   /*padding-top: calc(32% * (100 / 200) * 0.6);*/
   padding: 9px;
-  width: calc(33.3% * (100 / 200));
+  /*width: calc(33.3% * (100 / 200));*/
 }
 
 .mini-img{
