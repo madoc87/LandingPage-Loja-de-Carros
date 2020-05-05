@@ -1,17 +1,11 @@
 $(function(){
 
-
-
-//===============================================================================================================
 //================================ Barra de Presquisa de Preço pagina venda.html ================================
-//===============================================================================================================
-
 	var currentValue = 0;
 	var isDrag = false;
 	var preco_max = 700000;
 	var preco_atual = 0;
 	
-
 	 $('.pointer-barra').mousedown(function(){
 	 	isDrag = true;
 	 })
@@ -20,7 +14,6 @@ $(function(){
 	 	isDrag = false;
 	 	enableTextSelection();
 	 })
-
 
 	 $('.barra-preco').mousemove(function(e){
 	 	if(isDrag){
@@ -47,7 +40,6 @@ $(function(){
 	 		$('.preco_pesquisa').html('R$ '+preco_atual);
 	 	}
 	 })
-
 
 	 function formatarPreco(preco_atual){
 	 	preco_atual = preco_atual.toFixed(2);
@@ -90,10 +82,7 @@ $(function(){
 		$("body").css("-o-user-select", "auto");
 		$("body").css("user-select", "auto");
 	 }
-
-//===============================================================================================================
 //======================================== Slide pagina venda-teste.html ========================================
-//===============================================================================================================
 
 	 // mini-img-wraper -  <div style="background-color: rgb(210, 210, 210);" class="mini-img-wraper">
 	 // foto-destaque  - style="background-image: url('images/vision-s2.png');"
@@ -142,13 +131,11 @@ $(function(){
 	 			$('.nav-galeria').animate({'scrollLeft':elOffset+'px'});
 	 		}
 	 	});
-	 
-	 //navigateSlider
 	 }
 
 	 function clickSlider(){
 	 	$('.mini-img-wraper').click(function(){
-	 		$('mini-img-wraper').css('background-color','trasparent');
+	 		$('.mini-img-wraper').css('background-color','transparent');
 	 		$(this).css('background-color', 'rgb(210, 210, 210)');
 	 		var img = $(this).children().css('background-image');
 	 		$('.foto-destaque').css('background-image', img);
@@ -156,18 +143,11 @@ $(function(){
 
 	 	$('.mini-img-wraper').eq(0).click();
 	 }
-
-//===============================================================================================================
 //============================ Clicar e ir para div Contato com base no atributo goto ===========================
-//===============================================================================================================
-
 	$('[goto=contato]').click(function(){
 		$('html,body').animate({'scrollTop':$('#contato').offset().top});
 		return false;
 	});
-
-
-
 })
 
 

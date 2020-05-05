@@ -8,11 +8,4 @@ $(function(){
 
 		return false;
 	});
-
-	// $(function() {
-	// 	$('.mobile-menu').click(function(){
-	// 		$(this).find('ul').slideToggle();
-	// 	})
-	// });	
-
 })
